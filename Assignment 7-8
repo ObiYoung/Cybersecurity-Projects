@@ -1,0 +1,11 @@
+Exploiting WordPress Website
+
+Listed below are my exploitations I have conducted on my personal WordPress website lab environment.
+
+1. Cross Site Scripting Exploit #1
+
+On the home page, we can access the comments for the website and choose to leave our own comment. 
+I tried a couple of XSS lines but the only XSS line of code that seemed to work was when I entered <IFRAME SRC="javascript:alert('XSS');"></IFRAME>.
+I hit submit and when it was loading a new page my alert that said "XSS" popped on the top of the screen.
+
+2. 
