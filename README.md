@@ -6,25 +6,33 @@ Time spent: **X** hours spent in total
 
 ## Pentesting Report
 
-### 1. (Required) Cross Site Scripting Vulnerability #1
-  - [ ] Summary: 
-On the home page, we can access the comments for the website and choose to leave our own comment. 
-I tried a couple of XSS lines but the only XSS line of code that seemed to work was when I entered <IFRAME SRC="javascript:alert('XSS');"></IFRAME>.
-I hit submit and when it was loading a new page my alert that said "XSS" popped on the top of the screen.
+### 1. Cross Site Scripting Vulnerability #1
+  - [ ] Summary: In my pentesting WordPress environment, I input some cross site scripting lines of code in the comment box to get a pop up alert on the top of my browser.
     - Vulnerability types: Cross Site Scriptinng 
     - Tested in version: 4.1
     - Fixed in version: 4.5
   - [ ] GIF Walkthrough: <img src="xss.java.wp.gif" alt="XSS Vulnerability #1">
-  - [ ] Steps to recreate: 
+  - [ ] Steps to recreate: First, go to the home page, from there we can access the comments for the website and choose to leave our own comment. 
+I tried a couple of XSS lines and when I entered <IFRAME SRC="javascript:alert('XSS');"></IFRAME>.
+I hit submit and when it was loading a new page my XSS alert that said "XSS" popped on the top of the screen.
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-### 2. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
+### 2. Cross Site Scripting Vulnerability #2
+  - [ ] Summary: In my pentesting WordPress environment, I input some cross site scripting lines of code in the comment box that when excecuted the comments page contains fields to input your name and email address that were not there before. Other users can enter information into these input fields and if the attacker entered a site that can redirect this information to their own page it can be very dangerous.
+    - Vulnerability types: Cross Site Scripting
+    - Tested in version: 4.1 
+    - Fixed in version: 4.5 
+  - [ ] GIF Walkthrough: <img src="xss.wp2.gif" alt="XSS Vulnerability #2">
+  - [ ] Steps to recreate: First, go to the home page, from there we can access the comments for the website and choose to leave our own comment. 
+I entered lines of code that would create input fields
+<form action="/url/profile.php" method="post">
+<input type="text" name="firstname"/>
+<input type="text" name="lastname"/>
+<br/>
+<input type="text" name="email"/>
+<input type="submit" name="submit" value="Update"/>
+</form>.
+I hit submit and the input fields appeared in the comment section and users were able to input information. 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 ### 3. (Required) Vulnerability Name or ID
