@@ -31,7 +31,9 @@ I entered lines of code that would create input fields
 <br/>
 <input type="text" name="email"/>
 <input type="submit" name="submit" value="Update"/>
-</form>. I hit submit and the input fields appeared in the comment section and users were able to input information. 
+</form>
+I hit submit and the input fields appeared in the comment section and users were able to input information.
+
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 ### 3. (Required) Vulnerability Name or ID
