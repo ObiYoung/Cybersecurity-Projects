@@ -24,13 +24,14 @@ I hit submit and when it was loading a new page my XSS alert that said "XSS" pop
     - Fixed in version: 4.5 
   - [ ] GIF Walkthrough: <img src="xss.wp2.gif" alt="XSS Vulnerability #2">
   - [ ] Steps to recreate: First, go to the home page, from there we can access the comments for the website and choose to leave our own comment. 
-I entered lines of code that would create input fields <form action="/url/profile.php" method="post">
+I entered lines of code that would create input fields 
+*/<form action="/url/profile.php" method="post">
 <input type="text" name="firstname"/>
 <input type="text" name="lastname"/>
 <br/>
 <input type="text" name="email"/>
 <input type="submit" name="submit" value="Update"/>
-</form>. I hit submit and the input fields appeared in the comment section and users were able to input information.
+</form>*/. I hit submit and the input fields appeared in the comment section and users were able to input information.
 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
