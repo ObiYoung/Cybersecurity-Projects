@@ -14,8 +14,7 @@ I hit submit and when it was loading a new page my alert that said "XSS" popped 
     - Vulnerability types: Cross Site Scriptinng 
     - Tested in version: 4.1
     - Fixed in version: 4.5
-  - [ ] GIF Walkthrough: [xss java wp](https://user-images.githubusercontent.com/95333885/163868603-095fe951-b41f-4774-b726-b992724ab57c.gif)
-
+  - [ ] GIF Walkthrough: <img src="xss.java.wp.gif" alt="XSS Vulnerability #1">
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
