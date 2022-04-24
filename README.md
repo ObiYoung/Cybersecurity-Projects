@@ -1,6 +1,6 @@
 # Project 9 - Pentesting Live Targets
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 > Objective: Identify vulnerabilities in three different versions of the Globitek website: blue, green, and red.
 
@@ -63,5 +63,4 @@ Description: Made a html script that changes a sales person to Obi Young when th
 
 ## Notes
 
-Describe any challenges encountered while doing the work
 
