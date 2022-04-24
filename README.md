@@ -32,20 +32,33 @@ Description: Copy the PHP session id from the logged in user and paste it to the
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: Cross Site Scripting (XSS) 
 
-Description:
+Description: In the feedback section, I inserted a script <script>alert('Obi XSS');</script> that is displayed when a user is logged in and they check the feedback section. 
 
-<img src="green-vuln1.gif">
+<img src="week9_green1.gif">
+
+Vulnerability #2: User Enumeration 
+
+Description: The developers made a mistake on the log in page by putting the error message "Log in was unsuccessful" in bold when the username account exists and if the username account does not exist it is unbolded. 
+
+
+<img src="week9_green2.gif">
 
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: IDOR
 
-Description:
+Description: On the sales person page we can change the id in the url to transport us to any sales person in the database, even though we are not logged in users we can see sales person names that are not listed for us to see. 
 
-<img src="red-vuln1.gif">
+<img src="week9_red1.gif">
+
+Vulnerability #2: CSRF
+
+Description: Made a html script that changes a sales person to Obi Young when the link is opened on a logged in user's browser. 
+
+<img src="week9_red2.gif">
 
 
 ## Notes
