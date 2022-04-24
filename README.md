@@ -23,6 +23,12 @@ Description:  When I was on the editing a salesperson page I inserted 'or1=1' in
 
 <img src="week9_blue1.gif">
 
+Vulnerability #2: Session Hijack
+
+Description: Copy the PHP session id from the logged in user and paste it to the attackers browser PHP session id. Then you are logged in on the attackers browser and you hijacked the target's session. 
+
+<img src="week9_blue2.gif">
+
 
 ## Green
 
