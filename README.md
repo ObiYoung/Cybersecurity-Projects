@@ -18,7 +18,6 @@
 
 ### Database Backup (Required) 
 
-**Summary:** What is the RDBMS that MHN-Admin uses? What information does the exported JSON file record? 
-The RDBMS that MHN-Admin uses is MongoDB. The information that the exported JSON file records is the id of the attacker, the protocol the attacker used, hpfeed id, timestamp and date of the attack, the attacker's ip, source and destination ports, the type of honeypot used. 
+**Summary:** The RDBMS that MHN-Admin uses is MongoDB. The information that the exported JSON file records is the id of the attacker, the protocol the attacker used, hpfeed id, timestamp and date of the attack, the attacker's ip, source and destination ports, the type of honeypot used. 
 
 *Be sure to upload session.json directly to this GitHub repo/branch in order to get full credit.*
