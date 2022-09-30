@@ -1,3 +1,3 @@
-# CyberSec Projects
+# Cybersecurity Projects
 
 See branches for projects.
