@@ -1,3 +1,3 @@
-# Codepath_Homework
+# CyberSec Projects
 
-See branches for assignments.
+See branches for projects.
